@@ -1,0 +1,31 @@
+#portfolio {
+  padding: 96px 0;
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      .title {
+        text-transform: uppercase;
+        font-size: 48px;
+        color: #2c3350;
+      }
+      .star {
+        @include star(#2c3350);
+      }
+      .cardBox {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        justify-content: space-between;
+        .card {
+          flex: 0 0 32%;
+          border-radius: 5px;
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../mixins";
+#hero {
+  padding: 120px 0;
+  color: #fff;
+  background-color: rgb(26, 188, 156);
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 240px;
+        margin-bottom: 48px;
+      }
+      .title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 64px;
+      }
+      .star {
+        @include star(#fff);
+      }
+      .info {
+        font-size: 24px;
+      }
+    }
+  }
+}

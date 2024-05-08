@@ -1,0 +1,41 @@
+@import "../mixins";
+
+#contact {
+  padding: 96px 0;
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 48px;
+        color: #2c3e50;
+      }
+      .star {
+        @include star(#2c3e50);
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        input,
+        textarea {
+          padding: 24px 48px 24px 0;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #ededed;
+        }
+        button {
+          width: max-content;
+          padding: 16px 28px;
+          border: none;
+          background-color: #1abc9c;
+          border-radius: 5px;
+          color: #fff;
+          opacity: 0.65;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
